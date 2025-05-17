@@ -27,7 +27,7 @@ fn main() {
         };
 
         let url =
-            format!("https://github.com/LinguaSpark/core/releases/download/latest/{archive_name}");
+            format!("https://github.com/bitsavers/linguaspark-core/releases/latest/download/{archive_name}");
 
         println!("cargo:warning=Downloading {}", url);
         let resp = minreq::get(url).send().unwrap();
